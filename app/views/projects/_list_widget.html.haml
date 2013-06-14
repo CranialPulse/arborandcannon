@@ -1,0 +1,77 @@
+.box.box-color.box-bordered.lightgrey
+  .box-title
+    %h3
+      %i.icon-ok
+      Tasks
+    .actions
+      %a.btn{"data-toggle" => "modal", :href => "#new-task"}
+        %i.icon-plus-sign
+        Add Task
+  .box-content.nopadding
+    %ul.tasklist
+      %li.bookmarked
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-ok
+          %span Approve new users
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-bar-chart
+          %span Check statistics
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li.done
+        .check
+          %input.icheck-me{:checked => "", "data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-envelope
+          %span Check for new mails
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-comment
+          %span Chat with John Doe
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-retweet
+          %span Go and tweet some stuff
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-edit
+          %span Write an article
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty

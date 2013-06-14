@@ -1,0 +1,240 @@
+#navigation
+  .container-fluid
+    %a#brand{:href => "#"} FLAT
+    %a.toggle-nav{"data-placement" => "bottom", :href => "#", :rel => "tooltip", :title => "Toggle navigation"}
+      %i.icon-reorder
+    %ul.main-nav
+      %li.active
+        %a{:href => "index.html"}
+          %span Dashboard
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Forms
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "forms-basic.html"} Basic forms
+          %li
+            %a{:href => "forms-extended.html"} Extended forms
+          %li
+            %a{:href => "forms-validation.html"} Validation
+          %li
+            %a{:href => "forms-wizard.html"} Wizard
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Components
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "components-timeline.html"} Timeline
+          %li
+            %a{:href => "components-pagestatistics.html"} Page statistics
+          %li
+            %a{:href => "components-sidebarwidgets.html"} Sidebar widgets
+          %li
+            %a{:href => "components-messages.html"} Messages & Chat
+          %li
+            %a{:href => "components-gallery.html"} Gallery & Thumbs
+          %li
+            %a{:href => "components-tiles.html"} Tiles
+          %li
+            %a{:href => "components-icons.html"} Icons & Buttons
+          %li
+            %a{:href => "components-elements.html"} UI elements
+          %li
+            %a{:href => "components-typography.html"} Typography
+          %li
+            %a{:href => "components-bootstrap.html"} Bootstrap elements
+          %li
+            %a{:href => "components-grid.html"} Grid
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Tables
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "tables-basic.html"} Basic tables
+          %li
+            %a{:href => "tables-dynamic.html"} Dynamic tables
+          %li
+            %a{:href => "tables-large.html"} Large tables
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Plugins
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "plugins-charts.html"} Charts
+          %li
+            %a{:href => "plugins-calendar.html"} Calendar
+          %li
+            %a{:href => "plugins-filemanager.html"} File manager
+          %li
+            %a{:href => "plugins-filetrees.html"} File trees
+          %li
+            %a{:href => "plugins-elements.html"} Editable elements
+          %li
+            %a{:href => "plugins-maps.html"} Maps
+          %li
+            %a{:href => "plugins-dragdrop.html"} Drag & Drop widgets
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Pages
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "more-error.html"} Error pages
+          %li.dropdown-submenu
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Shop
+            %ul.dropdown-menu
+              %li
+                %a{:href => "more-shop-list.html"} List view
+              %li
+                %a{:href => "more-shop-product.html"} Product view
+          %li
+            %a{:href => "more-pricing.html"} Pricing tables
+          %li
+            %a{:href => "more-faq.html"} FAQ
+          %li
+            %a{:href => "more-invoice.html"} Invoice
+          %li
+            %a{:href => "more-userprofile.html"} User profile
+          %li
+            %a{:href => "more-searchresults.html"} Search results
+          %li
+            %a{:href => "more-login.html"} Login
+          %li
+            %a{:href => "more-locked.html"} Lock screen
+          %li
+            %a{:href => "more-email.html"} Email templates
+          %li
+            %a{:href => "more-blank.html"} Blank page
+          %li.dropdown-submenu
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Another submenu
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} This is level 3
+              %li
+                %a{:href => "#"} Another page here
+              %li.dropdown-submenu
+                %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Go to level 4
+                %ul.dropdown-menu
+                  %li
+                    %a{:href => "#"} This is level 4
+                  %li
+                    %a{:href => "#"} Unlimited levels
+                  %li
+                    %a{:href => "#"} Easy to use
+      %li
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          %span Layouts
+          %span.caret
+        %ul.dropdown-menu
+          %li
+            %a{:href => "layouts-sidebar-hidden.html"} Default hidden sidebar
+          %li
+            %a{:href => "layouts-color.html"} Different default color
+          %li
+            %a{:href => "layouts-fixed.html"} Fixed layout
+          %li
+            %a{:href => "layouts-fixed-topside.html"} Fixed topbar and sidebar
+          %li.dropdown-submenu
+            %a{:href => "#"} Mobile sidebar
+            %ul.dropdown-menu
+              %li
+                %a{:href => "layouts-mobile-slide.html"} Slide
+              %li
+                %a{:href => "layouts-mobile-button.html"} Button
+          %li
+            %a{:href => "layouts-footer.html"} Footer
+    .user
+      %ul.icon-nav
+        %li.dropdown
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.icon-envelope-alt
+            %span.label.label-lightred 4
+          %ul.dropdown-menu.pull-right.message-ul
+            %li
+              %a{:href => "#"}
+                %img{:alt => "", :src => "/assets/flat/demo/user-1.jpg"}/
+              .details
+                .name Jane Doe
+                .message
+                  Lorem ipsum Commodo quis nisi ...
+            %li
+              %a{:href => "#"}
+                %img{:alt => "", :src => "/assets/flat/demo/user-2.jpg"}/
+              .details
+                .name John Doedoe
+                .message
+                  Ut ad laboris est anim ut ...
+              .count
+                %i.icon-comment
+                %span 3
+            %li
+              %a{:href => "#"}
+                %img{:alt => "", :src => "/assets/flat/demo/user-3.jpg"}/
+              .details
+                .name Bob Doe
+                .message
+                  Excepteur Duis magna dolor!
+            %li
+              %a.more-messages{:href => "components-messages.html"}
+                Go to Message center
+                %i.icon-arrow-right
+        %li.dropdown.sett
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.icon-cog
+          %ul.dropdown-menu.pull-right.theme-settings
+            %li
+              %span Layout-width
+              .version-toggle
+                %a.set-fixed{:href => "#"} Fixed
+                %a.active.set-fluid{:href => "#"} Fluid
+            %li
+              %span Topbar
+              .topbar-toggle
+                %a.set-topbar-fixed{:href => "#"} Fixed
+                %a.active.set-topbar-default{:href => "#"} Default
+            %li
+              %span Sidebar
+              .sidebar-toggle
+                %a.set-sidebar-fixed{:href => "#"} Fixed
+                %a.active.set-sidebar-default{:href => "#"} Default
+        %li.dropdown.colo
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %i.icon-tint
+          %ul.dropdown-menu.pull-right.theme-colors
+            %li.subtitle
+              Predefined colors
+            %li
+              %span.red
+              %span.orange
+              %span.green
+              %span.brown
+              %span.blue
+              %span.lime
+              %span.teal
+              %span.purple
+              %span.pink
+              %span.magenta
+              %span.grey
+              %span.darkblue
+              %span.lightred
+              %span.lightgrey
+              %span.satblue
+              %span.satgreen
+        %li
+          %a.lock-screen{"data-placement" => "bottom", :href => "more-locked.html", :rel => "tooltip", :title => "Lock screen"}
+            %i.icon-lock
+      .dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          John Doe
+          %img{:alt => "", :src => "/assets/flat/demo/user-avatar.jpg"}/
+        %ul.dropdown-menu.pull-right
+          %li
+            %a{:href => "more-userprofile.html"} Edit profile
+          %li
+            %a{:href => "#"} Account settings
+          %li
+            %a{:href => "more-login.html"} Sign out

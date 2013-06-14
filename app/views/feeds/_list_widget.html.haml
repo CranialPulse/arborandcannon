@@ -1,0 +1,52 @@
+.box.box-color.box-bordered.green
+  .box-title
+    %h3
+      %i.icon-bullhorn>
+      Feeds
+    .actions
+      %a.btn.btn-mini.custom-checkbox.checkbox-active{:href => "#"}
+        Automatic refresh
+        %i.icon-check-empty
+  .box-content.nopadding.scrollable{"data-height" => "400", "data-visible" => "true"}
+    %table#randomFeed.table.table-nohead
+      %tbody
+        %tr
+          %td
+            %span.label
+              %i.icon-plus
+            %a{:href => "#"} John Doe
+            added a new photo
+        %tr
+          %td
+            %span.label.label-success
+              %i.icon-user
+            New user registered
+        %tr
+          %td
+            %span.label.label-info
+              %i.icon-shopping-cart
+            New order received
+        %tr
+          %td
+            %span.label.label-warning
+              %i.icon-comment
+            %a{:href => "#"} John Doe
+            commented on
+            %a{:href => "#"} News #123
+        %tr
+          %td
+            %span.label.label-success
+              %i.icon-user
+            New user registered
+        %tr
+          %td
+            %span.label.label-info
+              %i.icon-shopping-cart
+            New order received
+        %tr
+          %td
+            %span.label.label-warning
+              %i.icon-comment
+            %a{:href => "#"} John Doe
+            commented on
+            %a{:href => "#"} News #123

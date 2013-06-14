@@ -1,0 +1,111 @@
+%form.search-form{:action => "search-results.html", :method => "GET"}
+  .search-pane
+    %input{:name => "search", :placeholder => "Search here...", :type => "text"}/
+    %button{:type => "submit"}
+      %i.icon-search
+.subnav
+  .subnav-title
+    %a.toggle-subnav{:href => "#"}
+      %i.icon-angle-down
+      %span Content
+  %ul.subnav-menu
+    %li.dropdown
+      %a{"data-toggle" => "dropdown", :href => "#"} Articles
+      %ul.dropdown-menu
+        %li
+          %a{:href => "#"} Action #1
+        %li
+          %a{:href => "#"} Antoher Link
+        %li.dropdown-submenu
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Go to level 3
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} This is level 3
+            %li
+              %a{:href => "#"} Unlimited levels
+            %li
+              %a{:href => "#"} Easy to use
+    %li
+      %a{:href => "#"} News
+    %li
+      %a{:href => "#"} Pages
+    %li
+      %a{:href => "#"} Comments
+.subnav
+  .subnav-title
+    %a.toggle-subnav{:href => "#"}
+      %i.icon-angle-down
+      %span Plugins
+  %ul.subnav-menu
+    %li
+      %a{:href => "#"} Cache manager
+    %li.dropdown
+      %a{"data-toggle" => "dropdown", :href => "#"} Import manager
+      %ul.dropdown-menu
+        %li
+          %a{:href => "#"} Action #1
+        %li
+          %a{:href => "#"} Antoher Link
+        %li.dropdown-submenu
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Go to level 3
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} This is level 3
+            %li
+              %a{:href => "#"} Unlimited levels
+            %li
+              %a{:href => "#"} Easy to use
+    %li
+      %a{:href => "#"} Contact form generator
+    %li
+      %a{:href => "#"} SEO optimization
+.subnav
+  .subnav-title
+    %a.toggle-subnav{:href => "#"}
+      %i.icon-angle-down
+      %span Settings
+  %ul.subnav-menu
+    %li
+      %a{:href => "#"} Theme settings
+    %li.dropdown
+      %a{"data-toggle" => "dropdown", :href => "#"} Page settings
+      %ul.dropdown-menu
+        %li
+          %a{:href => "#"} Action #1
+        %li
+          %a{:href => "#"} Antoher Link
+        %li.dropdown-submenu
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} Go to level 3
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} This is level 3
+            %li
+              %a{:href => "#"} Unlimited levels
+            %li
+              %a{:href => "#"} Easy to use
+    %li
+      %a{:href => "#"} Security settings
+.subnav.subnav-hidden
+  .subnav-title
+    %a.toggle-subnav{:href => "#"}
+      %i.icon-angle-right
+      %span Default hidden
+  %ul.subnav-menu
+    %li
+      %a{:href => "#"} Menu
+    %li.dropdown
+      %a{"data-toggle" => "dropdown", :href => "#"} With submenu
+      %ul.dropdown-menu
+        %li
+          %a{:href => "#"} Action #1
+        %li
+          %a{:href => "#"} Antoher Link
+        %li.dropdown-submenu
+          %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"} More stuff
+          %ul.dropdown-menu
+            %li
+              %a{:href => "#"} This is level 3
+            %li
+              %a{:href => "#"} Easy to use
+    %li
+      %a{:href => "#"} Security settings
