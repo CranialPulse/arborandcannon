@@ -23,6 +23,7 @@
 //= require flat/plugins/icheck/jquery.icheck.min
 //= require flat/eakroko
 //= require flat/application
+//= require flat/demonstration
 
 
 

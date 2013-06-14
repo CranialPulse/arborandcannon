@@ -1,1 +1,46 @@
- 
+#left
+  = render 'shared/side_navigation'
+#main
+  .container-fluid
+    .page-header
+      .pull-left
+        %h1 Dashboard
+      .pull-right
+        %ul.minitiles
+          %li.grey
+            %a{:href => "#"}
+              %i.icon-cogs
+          %li.lightgrey
+            %a{:href => "#"}
+              %i.icon-globe
+        %ul.stats
+          %li.satgreen
+            %i.icon-money
+            .details
+              %span.big $324,12
+              %span Balance
+          %li.lightred
+            %i.icon-calendar
+            .details
+              %span.big February 22, 2013
+              %span Wednesday, 13:56
+    .breadcrumbs
+      %ul
+        %li
+          %a{:href => "more-login.html"} Home
+          %i.icon-angle-right
+        %li
+          %a{:href => "index.html"} Dashboard
+      .close-bread
+        %a{:href => "#"}
+          %i.icon-remove
+    .row-fluid
+      .span6
+        = render 'projects/list_widget'
+      .span6
+        = render 'contacts/address_book_widget'
+    .row-fluid
+      .span6
+        = render 'calendar/widget'
+      .span6
+        = render 'feeds/list_widget'
