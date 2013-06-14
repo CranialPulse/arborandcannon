@@ -2,19 +2,30 @@
   .box-title
     %h3
       %i.icon-ok
-      Tasks
+      Projects
     .actions
       %a.btn{"data-toggle" => "modal", :href => "#new-task"}
         %i.icon-plus-sign
-        Add Task
+        Start New Project
   .box-content.nopadding
     %ul.tasklist
       %li.bookmarked
         .check
           %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
         %span.task
-          %i.icon-ok
-          %span Approve new users
+          %i.icon-wrench
+          %span Order parts for Jane Doe Mantel Clock
+        %span.task-actions
+          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
+            %i.icon-remove
+          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
+            %i.icon-bookmark-empty
+      %li.bookmarked
+        .check
+          %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
+        %span.task
+          %i.icon-wrench
+          %span Order parts for John Doe Grandfather Clock
         %span.task-actions
           %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
             %i.icon-remove
@@ -24,19 +35,8 @@
         .check
           %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
         %span.task
-          %i.icon-bar-chart
-          %span Check statistics
-        %span.task-actions
-          %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
-            %i.icon-remove
-          %a.task-bookmark{:href => "#", :rel => "tooltip", :title => "Mark as important"}
-            %i.icon-bookmark-empty
-      %li.done
-        .check
-          %input.icheck-me{:checked => "", "data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
-        %span.task
-          %i.icon-envelope
-          %span Check for new mails
+          %i.icon-road
+          %span Deliver clock to Bob Doe
         %span.task-actions
           %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
             %i.icon-remove
@@ -46,8 +46,8 @@
         .check
           %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
         %span.task
-          %i.icon-comment
-          %span Chat with John Doe
+          %i.icon-stethoscope
+          %span House call for Suzie Doe
         %span.task-actions
           %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
             %i.icon-remove
@@ -57,8 +57,8 @@
         .check
           %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
         %span.task
-          %i.icon-retweet
-          %span Go and tweet some stuff
+          %i.icon-camera
+          %span Add photo of Annie Doe's Mantel Clock
         %span.task-actions
           %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
             %i.icon-remove
@@ -68,8 +68,8 @@
         .check
           %input.icheck-me{"data-color" => "blue", "data-skin" => "square", :type => "checkbox"}/
         %span.task
-          %i.icon-edit
-          %span Write an article
+          %i.icon-stethoscope
+          %span House call for Mark Doe
         %span.task-actions
           %a.task-delete{:href => "#", :rel => "tooltip", :title => "Delete that task"}
             %i.icon-remove
